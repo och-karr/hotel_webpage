@@ -3,3 +3,17 @@ PROJECT STYLES
 ==============
 Imports all project style components.
 */
+
+// Mixins
+@import "mixins/media-breakpoints";
+
+//Base
+@import "base/general";
+@import "base/typography";
+
+// Modules
+@import "modules/nav";
+@import "modules/header";
+
+// Variables
+@import "variables/factors.scss";

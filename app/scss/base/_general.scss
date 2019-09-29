@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Open Sans';
+}
+
+html {
+    font-size: 18px * 0.83;
+
+    @media #{$max1400} {
+        font-size: 18px * 0.73;
+    }
+
+    @media #{$max1199} {
+        font-size: 18px * 0.63;
+    }
+
+    @media #{$max991} {
+        font-size: 18px * 0.52;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1600px;
+    min-width: 280px;
+    margin: 0 auto;
+}
