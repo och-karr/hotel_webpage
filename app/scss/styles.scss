@@ -4,6 +4,9 @@ PROJECT STYLES
 Imports all project style components.
 */
 
+// Variables
+@import "variables/fonts.scss";
+
 // Mixins
 @import "mixins/media-breakpoints";
 
@@ -14,6 +17,3 @@ Imports all project style components.
 // Modules
 @import "modules/nav";
 @import "modules/header";
-
-// Variables
-@import "variables/factors.scss";
