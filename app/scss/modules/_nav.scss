@@ -27,7 +27,6 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 0 30px;
 
     @media #{$max767} {
       justify-content: space-around;
@@ -43,6 +42,7 @@
   }
 
   &__list--left {
+    padding-right: 30px;
     padding-left: 60px;
     @media #{$max767} {
       order: 2;
@@ -55,6 +55,7 @@
   }
 
   &__list--right {
+    padding-left: 30px;
     @media #{$max767} {
       order: 3;
       padding-left: 0;
@@ -154,5 +155,13 @@
     padding-top: 18px;
     display: block;
     box-sizing: content-box;
+
+    @media #{$max991} {
+      width: 90%;
+    }
+
+    @media #{$max767} {
+      width: 60%;
+    }
   }
 }

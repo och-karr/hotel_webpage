@@ -35,7 +35,7 @@ html {
   color: #fff;
   cursor: pointer;
   outline: none;
-  font-size: 20px; }
+  font-size: 1.3rem; }
 
 .nav {
   width: 100%;
@@ -61,8 +61,7 @@ html {
   .nav__list {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 0 30px; }
+    justify-content: space-between; }
     @media all and (max-width: 767px) {
       .nav__list {
         justify-content: space-around; } }
@@ -74,6 +73,7 @@ html {
         flex-wrap: wrap;
         justify-content: flex-start; } }
   .nav__list--left {
+    padding-right: 30px;
     padding-left: 60px; }
     @media all and (max-width: 767px) {
       .nav__list--left {
@@ -82,10 +82,12 @@ html {
     @media all and (max-width: 575px) {
       .nav__list--left {
         padding-left: 0; } }
-  @media all and (max-width: 767px) {
-    .nav__list--right {
-      order: 3;
-      padding-left: 0; } }
+  .nav__list--right {
+    padding-left: 30px; }
+    @media all and (max-width: 767px) {
+      .nav__list--right {
+        order: 3;
+        padding-left: 0; } }
   .nav__list-item {
     padding: 0 20px; }
     @media all and (max-width: 991px) {
@@ -155,6 +157,12 @@ html {
     padding-top: 18px;
     display: block;
     box-sizing: content-box; }
+    @media all and (max-width: 991px) {
+      .logo__image {
+        width: 90%; } }
+    @media all and (max-width: 767px) {
+      .logo__image {
+        width: 60%; } }
 
 .header {
   background: url("../images/photos/header.png");
@@ -166,31 +174,58 @@ html {
   width: 80%;
   max-width: 986px;
   padding: 40px;
-  padding-top: 133px;
+  padding-top: 10rem;
   margin: 0 auto;
-  background-color: #003f8cea; }
+  background-color: #003f8cea;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between; }
+  @media all and (max-width: 1199px) {
+    .jumbotron {
+      height: 679px;
+      padding: 30px 15px;
+      padding-top: 10rem; } }
+  @media all and (max-width: 767px) {
+    .jumbotron {
+      padding-top: 50px; } }
+  @media all and (max-width: 575px) {
+    .jumbotron {
+      width: 95%;
+      padding-top: 30px; } }
   .jumbotron__title {
-    max-width: 480px;
+    width: 100%;
     margin: 0 auto;
     font-size: 3.2rem;
     font-family: "Playfair Display", serif;
     color: #fff;
     font-weight: 400;
     text-align: center; }
+    @media all and (max-width: 400px) {
+      .jumbotron__title {
+        line-height: 31px; } }
   .jumbotron__btn {
     width: 225px;
     height: 53px;
-    display: block;
-    margin: 60px auto 67px auto; }
+    display: block; }
+    @media all and (max-width: 400px) {
+      .jumbotron__btn {
+        margin: 10px auto; } }
 
 .form {
   border: 2px solid #fff;
-  padding: 44px 65px;
+  padding: 3.5rem 5.2rem;
   display: flex;
   flex-wrap: wrap; }
+  @media all and (max-width: 991px) {
+    .form {
+      padding: 30px; } }
+  @media all and (max-width: 400px) {
+    .form {
+      padding: 10px; } }
   .form__title {
     width: 100%;
-    font-size: 30px;
+    font-size: 2rem;
     color: #fff;
     font-weight: normal;
     padding-bottom: 38px; }
@@ -198,15 +233,39 @@ html {
     width: 77%;
     display: flex;
     flex-wrap: wrap; }
+    @media all and (max-width: 767px) {
+      .form__input-group {
+        width: 100%;
+        justify-content: space-between; } }
   .form__input {
     width: calc(50% - 25px);
     margin-right: 25px;
     height: 47px; }
     .form__input--margin-btm {
       margin-bottom: 25px; }
+      @media all and (max-width: 575px) {
+        .form__input--margin-btm {
+          margin-bottom: 0; } }
+    @media all and (max-width: 767px) {
+      .form__input {
+        width: 48%;
+        margin-right: 0; } }
+    @media all and (max-width: 575px) {
+      .form__input {
+        width: 100%;
+        margin-bottom: 5px; }
+        .form__input--moved {
+          display: flex;
+          order: 1;
+          border: 2px solid red; } }
   .form__btn {
     width: 23%;
     height: 119px; }
+    @media all and (max-width: 767px) {
+      .form__btn {
+        width: 150px;
+        height: 100px;
+        margin: 10px auto 0 auto; } }
   .form__btn-img {
     width: 37px;
     display: block;

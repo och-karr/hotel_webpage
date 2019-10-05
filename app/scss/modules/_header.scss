@@ -9,66 +9,132 @@
   width: 80%;
   max-width: 986px;
   padding: 40px;
-  padding-top: 133px;
+  padding-top: 10rem;
   margin: 0 auto;
   background-color: #003f8cea;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+
+  @media #{$max1199} {
+    height: 679px;
+    padding: 30px 15px;
+    padding-top: 10rem;
+  }
+
+  @media #{$max767} {
+    padding-top: 50px;
+  }
+
+  @media #{$max575} {
+    width: 95%;
+    padding-top: 30px;
+  }
 
   &__title {
-    max-width: 480px;
+    width: 100%;
     margin: 0 auto;
     font-size: 3.2rem;
     font-family: $other-font;
     color: #fff;
     font-weight: 400;
     text-align: center;
+
+    @media #{$max400} {
+      line-height: 31px;
+    }
   }
 
   &__btn {
     width: 225px;
     height: 53px;
     display: block;
-    margin: 60px auto 67px auto;
+    // margin: 60px auto 67px auto;
+
+    @media #{$max400} {
+      margin: 10px auto;
+    }
   }
 }
 
 .form {
-    border: 2px solid #fff;
-    padding: 44px 65px;
+  border: 2px solid #fff;
+  padding: 3.5rem 5.2rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media #{$max991} {
+    padding: 30px;
+  }
+
+  @media #{$max400} {
+    padding: 10px;
+  }
+
+  &__title {
+    width: 100%;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: normal;
+    padding-bottom: 38px;
+  }
+
+  &__input-group {
+    width: 77%;
     display: flex;
     flex-wrap: wrap;
 
-    &__title {
-        width: 100%;
-        font-size: 30px;
-        color: #fff;
-        font-weight: normal;
-        padding-bottom: 38px;
+    @media #{$max767} {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  &__input {
+    width: calc(50% - 25px);
+    margin-right: 25px;
+    height: 47px;
+
+    &--margin-btm {
+      margin-bottom: 25px;
+
+      @media #{$max575} {
+        margin-bottom: 0;
+      }
     }
 
-    &__input-group {
-        width: 77%;
+    @media #{$max767} {
+      width: 48%;
+      margin-right: 0;
+    }
+
+    @media #{$max575} {
+      width: 100%;
+      margin-bottom: 5px;
+
+      &--moved {
         display: flex;
-        flex-wrap: wrap;
+        order: 1;
+        border: 2px solid red;
+      }
     }
+  }
 
-    &__input {
-        width: calc(50% - 25px);
-        margin-right: 25px;
-        height: 47px;
+  &__btn {
+    width: 23%;
+    height: 119px;
 
-        &--margin-btm {
-            margin-bottom: 25px;
-        }
+    @media #{$max767} {
+      width: 150px;
+      height: 100px;
+      margin: 10px auto 0 auto;
     }
+  }
 
-    &__btn {
-        width: 23%;
-        height: 119px;
-    }
-
-    &__btn-img {
-        width: 37px;
-        display: block;
-        margin: 0 auto;
-    }
+  &__btn-img {
+    width: 37px;
+    display: block;
+    margin: 0 auto;
+  }
 }
