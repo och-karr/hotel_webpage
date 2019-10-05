@@ -95,6 +95,32 @@
     width: calc(50% - 25px);
     margin-right: 25px;
     height: 47px;
+    padding: 0 10px;
+    border: 0;
+
+    &--date {
+      background: url("../../images/icons/calendar.svg");
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: 95% center;
+    }
+    &--select {
+      appearance: none;
+      background: url("../../images/icons/arrow-down.svg");
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: 95% center;
+
+      &:focus {
+      }
+    }
+
+    &--arrow-up {
+      background: url("../../images/icons/arrow-up.png");
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: 95% center;
+    }
 
     &--margin-btm {
       margin-bottom: 25px;
@@ -114,9 +140,7 @@
       margin-bottom: 5px;
 
       &--moved {
-        display: flex;
         order: 1;
-        border: 2px solid red;
       }
     }
   }

@@ -240,7 +240,25 @@ html {
   .form__input {
     width: calc(50% - 25px);
     margin-right: 25px;
-    height: 47px; }
+    height: 47px;
+    padding: 0 10px;
+    border: 0; }
+    .form__input--date {
+      background: url("../../images/icons/calendar.svg");
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: 95% center; }
+    .form__input--select {
+      appearance: none;
+      background: url("../../images/icons/arrow-down.svg");
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: 95% center; }
+    .form__input--arrow-up {
+      background: url("../../images/icons/arrow-up.png");
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: 95% center; }
     .form__input--margin-btm {
       margin-bottom: 25px; }
       @media all and (max-width: 575px) {
@@ -255,9 +273,7 @@ html {
         width: 100%;
         margin-bottom: 5px; }
         .form__input--moved {
-          display: flex;
-          order: 1;
-          border: 2px solid red; } }
+          order: 1; } }
   .form__btn {
     width: 23%;
     height: 119px; }

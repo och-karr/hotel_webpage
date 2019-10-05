@@ -9,16 +9,21 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Playfair+Display&display=swap&subset=latin-ext"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap&subset=latin-ext"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.min.css">
     <title>Hotel z widokiem na morze</title>
+</head>
+
+<body>
     <div class="wrapper">
         <header class="header">
             <nav class="nav">
                 <ul class="nav__list nav__list--left">
                     <li class="nav__list-item nav__list-item--location"><a class="nav__text nav__link">Hotel</a></li>
                     <li class="nav__list-item nav__list-item--location"><a class="nav__text nav__link">Pokoje</a></li>
-                    <li class="nav__list-item nav__list-item--location"><a class="nav__text nav__link">Restauracje</a></li>
+                    <li class="nav__list-item nav__list-item--location"><a class="nav__text nav__link">Restauracje</a>
+                    </li>
                 </ul>
                 <div class="nav__logo-container">
                     <div class="nav__logo logo">
@@ -32,7 +37,8 @@
                     </div>
                 </div>
                 <ul class="nav__list nav__list--right">
-                    <li class="nav__list-item nav__list-item--location"><a class="nav__text nav__link">Rezerwacje</a></li>
+                    <li class="nav__list-item nav__list-item--location"><a class="nav__text nav__link">Rezerwacje</a>
+                    </li>
                     <li class="nav__list-item nav__list-item--location"><a class="nav__text nav__link">Kontakt</a></li>
                     <li class="nav__list-item nav__list-item--location nav__list-item--narrower">
                         <img src="./images/icons/fb.svg" alt="facebook icon" class="nav__link">
@@ -43,20 +49,21 @@
                 </ul>
             </nav>
             <div class="jumbotron">
-                <h1 class="jumbotron__title">Zapewniamy komfort <br/> i cudowne widoki</h1>
+                <h1 class="jumbotron__title">Zapewniamy komfort <br /> i cudowne widoki</h1>
                 <button class="jumbotron__btn btn">Sprawdź ofertę</button>
                 <form action="" class="jumbotron__form form">
                     <h4 class="form__title">Zarezerwuj swój pobyt</h4>
                     <div class="form__input-group">
-                        <input type="date" class="form__input form__input--margin-btm">
-                        <select class="form__input form__select form__input--margin-btm form__input--moved">
+                        <input type="text" placeholder="Data przyjazdu"
+                            class="form__input form__input--margin-btm form__input--date form__input--start-date">
+                        <select class="form__input form__select form__input--margin-btm form__input--select form__input--moved">
                             <option class="form__option" value="0">Dzieci</option>
                             <option class="form__option" value="1">1</option>
                             <option class="form__option" value="2">2</option>
                             <option class="form__option" value="3">3</option>
                         </select>
-                        <input type="date" class="form__input">
-                        <select class="form__input form__select">
+                        <input type="text" placeholder="Data wyjazdu" class="form__input form__input--date">
+                        <select class="form__input form__select form__input--select">
                             <option class="form__option" value="0">Dorośli</option>
                             <option class="form__option" value="1">1</option>
                             <option class="form__option" value="2">2</option>
@@ -71,10 +78,7 @@
             </div>
         </header>
     </div>
-</head>
-
-<body>
-
+    <script src="./js/index.min.js"></script>
 </body>
 
 </html>
