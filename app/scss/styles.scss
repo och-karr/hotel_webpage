@@ -14,6 +14,9 @@ Imports all project style components.
 @import "base/general";
 @import "base/typography";
 
+//Components
+@import "components/button";
+
 // Modules
 @import "modules/nav";
 @import "modules/header";

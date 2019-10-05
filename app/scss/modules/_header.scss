@@ -1,27 +1,74 @@
 .header {
-    background: url('../images/photos/header.png');
-    background-position: bottom center;
-    background-size: cover;
+  background: url("../images/photos/header.png");
+  background-position: bottom center;
+  background-size: cover;
 }
 
 .jumbotron {
-    height: 772px;
-    width: 60%;
-    margin: 0 auto;
-    background-color: #003f8cc0;
+  height: 772px;
+  width: 80%;
+  max-width: 986px;
+  padding: 40px;
+  padding-top: 133px;
+  margin: 0 auto;
+  background-color: #003f8cea;
 
-    &__title {
-        max-width: 75%;
-        margin: 0 auto;
-        font-size: 4.8rem;
-        font-family: $other-font;
-        color: #fff;
-        font-weight: 400;
-        text-align: center;
-        
-    }
+  &__title {
+    max-width: 480px;
+    margin: 0 auto;
+    font-size: 3.2rem;
+    font-family: $other-font;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__btn {
+    width: 225px;
+    height: 53px;
+    display: block;
+    margin: 60px auto 67px auto;
+  }
 }
 
 .form {
+    border: 2px solid #fff;
+    padding: 44px 65px;
+    display: flex;
+    flex-wrap: wrap;
 
+    &__title {
+        width: 100%;
+        font-size: 30px;
+        color: #fff;
+        font-weight: normal;
+        padding-bottom: 38px;
+    }
+
+    &__input-group {
+        width: 77%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__input {
+        width: calc(50% - 25px);
+        margin-right: 25px;
+        height: 47px;
+
+        &--margin-btm {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__btn {
+        width: 23%;
+        height: 119px;
+    }
+
+    &__btn-img {
+        width: 37px;
+        display: block;
+        margin: 0 auto;
+    }
 }

@@ -43,9 +43,14 @@
   }
 
   &__list--left {
+    padding-left: 60px;
     @media #{$max767} {
       order: 2;
       padding-right: 0;
+    }
+
+    @media #{$max575} {
+      padding-left: 0;
     }
   }
 

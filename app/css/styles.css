@@ -29,6 +29,14 @@ html {
   min-width: 280px;
   margin: 0 auto; }
 
+.btn {
+  background-color: #ffb01e;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px; }
+
 .nav {
   width: 100%;
   background-color: #96cccc;
@@ -65,10 +73,15 @@ html {
         padding: 0;
         flex-wrap: wrap;
         justify-content: flex-start; } }
-  @media all and (max-width: 767px) {
-    .nav__list--left {
-      order: 2;
-      padding-right: 0; } }
+  .nav__list--left {
+    padding-left: 60px; }
+    @media all and (max-width: 767px) {
+      .nav__list--left {
+        order: 2;
+        padding-right: 0; } }
+    @media all and (max-width: 575px) {
+      .nav__list--left {
+        padding-left: 0; } }
   @media all and (max-width: 767px) {
     .nav__list--right {
       order: 3;
@@ -150,14 +163,51 @@ html {
 
 .jumbotron {
   height: 772px;
-  width: 60%;
+  width: 80%;
+  max-width: 986px;
+  padding: 40px;
+  padding-top: 133px;
   margin: 0 auto;
-  background-color: #003f8cc0; }
+  background-color: #003f8cea; }
   .jumbotron__title {
-    max-width: 75%;
+    max-width: 480px;
     margin: 0 auto;
-    font-size: 4.8rem;
+    font-size: 3.2rem;
     font-family: "Playfair Display", serif;
     color: #fff;
     font-weight: 400;
     text-align: center; }
+  .jumbotron__btn {
+    width: 225px;
+    height: 53px;
+    display: block;
+    margin: 60px auto 67px auto; }
+
+.form {
+  border: 2px solid #fff;
+  padding: 44px 65px;
+  display: flex;
+  flex-wrap: wrap; }
+  .form__title {
+    width: 100%;
+    font-size: 30px;
+    color: #fff;
+    font-weight: normal;
+    padding-bottom: 38px; }
+  .form__input-group {
+    width: 77%;
+    display: flex;
+    flex-wrap: wrap; }
+  .form__input {
+    width: calc(50% - 25px);
+    margin-right: 25px;
+    height: 47px; }
+    .form__input--margin-btm {
+      margin-bottom: 25px; }
+  .form__btn {
+    width: 23%;
+    height: 119px; }
+  .form__btn-img {
+    width: 37px;
+    display: block;
+    margin: 0 auto; }
