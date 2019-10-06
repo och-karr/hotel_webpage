@@ -1,6 +1,6 @@
 .nav {
   width: 100%;
-  background-color: rgb(150, 204, 204);
+  background-color: #fff;
   height: 125px;
   display: flex;
   flex-wrap: nowrap;
@@ -132,10 +132,7 @@
   }
 
   &__stars-group {
-    display: flex;
-    justify-content: center;
     height: 34px;
-    box-sizing: content-box;
 
     @media #{$max991} {
       height: 21px;
@@ -143,7 +140,7 @@
     }
   }
 
-  &__star-elem {
+  .star-elem--logo {
     @media #{$max991} {
       width: 30px;
     }

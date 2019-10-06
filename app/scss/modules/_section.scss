@@ -1,0 +1,110 @@
+.section {
+    padding: 5.5rem 13.6rem;
+
+    @media #{$max991} {
+        padding: 50px 100px;
+    }
+    @media #{$max767} {
+        padding: 30px;
+    }
+
+    &__title-container {
+        position: relative;
+        padding-bottom: 2.8rem;
+    }
+    &__title {
+        font-size: 2.7rem;
+        color: #003f8c;
+        text-transform: uppercase;
+        font-weight: normal;
+        width: 150px;
+        line-height: 2.7rem;
+        padding-top: 10px;
+        padding-bottom: 1rem;
+    }
+
+    &__title-stripe {
+        border-bottom: 2px solid #003f8c;
+        width: 62%;
+        position: absolute;
+        top: 30px;
+        left: 150px;
+        z-index: 2;
+    }
+
+    &__stars-group {
+        width: 100px;
+        justify-content: space-between;
+    }
+
+    .star-elem--section {
+        width: 20px;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    &__content {
+        width: 63%;
+        text-align: justify;
+        display: inline-block;
+        padding-right: 8.2rem;
+        padding-bottom: 1rem;
+
+        @media #{$max991} {
+            padding-right: 50px;
+        }
+        @media #{$max767} {
+            padding-right: 30px;
+        }
+        @media #{$max575} {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    &__content-part {
+        padding-bottom: 1.3rem;
+
+        &--padding-btm {
+            padding-bottom: 3.5rem;
+        }
+    }
+
+    &__btn {
+        width: 18.3rem;
+        height: 5.5rem;
+    }
+
+    &__image-container {
+        width: 37%;
+        display: inline-block;
+        position: relative;
+
+        @media #{$max575} {
+            display: none;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        height: 145%;
+        background: url('../../images/photos/hotel_1.png');
+        background-size: cover;
+        // background-position: right center;
+
+        @media #{$max1400} {
+            height: 140%;
+        }
+
+        @media #{$max767} {
+            height: 100%;
+            top: -30px;
+        }
+    }
+}

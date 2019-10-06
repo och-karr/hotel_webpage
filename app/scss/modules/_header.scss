@@ -103,6 +103,11 @@
       background-color: #fff;
       background-repeat: no-repeat;
       background-position: 95% center;
+
+      &:focus {
+        background: none;
+        background-color: #fff;
+      }
     }
     &--select {
       appearance: none;

@@ -27,11 +27,11 @@
                 </ul>
                 <div class="nav__logo-container">
                     <div class="nav__logo logo">
-                        <div class="logo__stars-group">
-                            <img src="./images/icons/star.svg" alt="hotel rating star" class="logo__star-elem">
-                            <img src="./images/icons/star.svg" alt="hotel rating star" class="logo__star-elem">
-                            <img src="./images/icons/star.svg" alt="hotel rating star" class="logo__star-elem">
-                            <img src="./images/icons/star.svg" alt="hotel rating star" class="logo__star-elem">
+                        <div class="logo__stars-group stars-group">
+                            <img src="./images/icons/star.svg" alt="hotel rating star" class="star-elem--logo">
+                            <img src="./images/icons/star.svg" alt="hotel rating star" class="star-elem--logo">
+                            <img src="./images/icons/star.svg" alt="hotel rating star" class="star-elem--logo">
+                            <img src="./images/icons/star.svg" alt="hotel rating star" class="star-elem--logo">
                         </div>
                         <img src="./images/icons/title.png" alt="hotel logo" class="logo__image">
                     </div>
@@ -56,7 +56,8 @@
                     <div class="form__input-group">
                         <input type="text" placeholder="Data przyjazdu"
                             class="form__input form__input--margin-btm form__input--date form__input--start-date">
-                        <select class="form__input form__select form__input--margin-btm form__input--select form__input--moved">
+                        <select
+                            class="form__input form__select form__input--margin-btm form__input--select form__input--moved">
                             <option class="form__option" value="0">Dzieci</option>
                             <option class="form__option" value="1">1</option>
                             <option class="form__option" value="2">2</option>
@@ -77,6 +78,50 @@
                 </form>
             </div>
         </header>
+        <main class="main">
+            <section class="section">
+                <div class="section__title-container">
+                    <h2 class="section__title section__title--left">NASZ HOTEL</h2>
+                    <div class="section__stars-group stars-group">
+                        <img src="./images/icons/star.svg" alt="hotel rating star" class="star-elem--section">
+                        <img src="./images/icons/star.svg" alt="hotel rating star" class="star-elem--section">
+                        <img src="./images/icons/star.svg" alt="hotel rating star" class="star-elem--section">
+                        <img src="./images/icons/star.svg" alt="hotel rating star" class="star-elem--section">
+                    </div>
+                    <div class="section__title-stripe"></div>
+                </div>
+                <div class="section__container">
+                    <div class="section__content">
+                        <p class="basic-text section__content-part">
+                            Hotel został wybudowany w 2015 roku na obrzeżach nadmorskiego kurortu Pogorzelica, w cichej
+                            i
+                            spokojnej okolicy. Hotel znajduje się na wschód od miasta, zaledwie 300 metrów od plaży.
+                            Otoczony
+                            zielenią, drzewami teren jest zagrodzony i strzeżony, dlatego nasi goście mogą czuć się
+                            bezpiecznie.
+                        </p>
+                        <p class="basic-text section__content-part">
+                            Na terenie Hotelu znajdują się dwa baseny - wewnętrzny i zewnętrzny - a także brodzik dla
+                            najmłodszych. W naszym nowoczesnym budynku znajduje się 120 pokoi różnych klas: pokoje
+                            Standard,
+                            Deluxe oraz Premium.
+                        </p>
+                        <p class="basic-text section__content-part section__content-part--padding-btm">
+                            Istnieje możliwość zorganizowania imprez okolicznościowych takich jak przyjęcia,
+                            konferencje,
+                            bankiety czy wesela. Dodatkowo w hotelu organizowane są imprezy okolicznościowe i koncerty
+                            gwiazd
+                            polskiej muzyki rozrywkowej.
+                        </p>
+                        <button class="btn section__btn">Zobacz więcej</button>
+                    </div>
+                    <div class="section__image-container">
+                        <!-- <img src="images/photos/hotel_1.png" alt="" class="section__image"> -->
+                        <div class="section__image"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
     <script src="./js/index.min.js"></script>
 </body>
