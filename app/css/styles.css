@@ -258,7 +258,8 @@ html {
       background: url("../../images/icons/arrow-up.png");
       background-color: #fff;
       background-repeat: no-repeat;
-      background-position: 95% center; }
+      background-position: 95% center;
+      background-size: 13px; }
     .form__input--margin-btm {
       margin-bottom: 25px; }
       @media all and (max-width: 575px) {

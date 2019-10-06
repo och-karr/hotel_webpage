@@ -110,9 +110,6 @@
       background-color: #fff;
       background-repeat: no-repeat;
       background-position: 95% center;
-
-      &:focus {
-      }
     }
 
     &--arrow-up {
@@ -120,6 +117,7 @@
       background-color: #fff;
       background-repeat: no-repeat;
       background-position: 95% center;
+      background-size: 13px;
     }
 
     &--margin-btm {
