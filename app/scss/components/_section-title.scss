@@ -1,0 +1,46 @@
+.section {
+  &__title-container {
+    position: relative;
+    padding-bottom: 2.8rem;
+
+    &--right {
+      text-align: right;
+    }
+  }
+  &__title {
+    font-size: 2.7rem;
+    color: #003f8c;
+    text-transform: uppercase;
+    font-weight: normal;
+    width: 150px;
+    line-height: 2.7rem;
+    padding-top: 10px;
+    padding-bottom: 1rem;
+
+    &--right {
+      margin: 0 0 0 auto;
+    }
+  }
+
+  &__title-stripe {
+    border-bottom: 2px solid #003f8c;
+    width: 62%;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    z-index: 2;
+  }
+
+  &__stars-group {
+    width: 100px;
+    justify-content: space-between;
+
+    &--right {
+      margin: 0 0 0 auto;
+    }
+  }
+
+  .star-elem--section {
+    width: 20px;
+  }
+}

@@ -12,7 +12,6 @@
 
     for (let i=0; i<selectInputGroup.length; i++) {
         let selectInput = selectInputGroup[i];
-        console.log(selectInput);
         selectInput.addEventListener('click', changeArrow);
         selectInput.addEventListener('blur', resetArrow);
     }

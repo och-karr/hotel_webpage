@@ -1,110 +1,151 @@
 .section {
-    padding: 5.5rem 13.6rem;
+  padding: 5.5rem 13.6rem;
 
-    @media #{$max991} {
-        padding: 50px 100px;
-    }
-    @media #{$max767} {
-        padding: 30px;
+  @media #{$max991} {
+    padding: 50px 100px;
+  }
+  @media #{$max767} {
+    padding: 30px;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__content {
+    text-align: justify;
+    display: inline-block;
+    &--about {
+      width: 63%;
+      padding-right: 8.2rem;
+      padding-bottom: 1rem;
+
+      @media #{$max991} {
+        padding-right: 50px;
+      }
+      @media #{$max767} {
+        padding-right: 30px;
+      }
+      @media #{$max575} {
+        width: 100%;
+        padding-right: 0;
+      }
     }
 
-    &__title-container {
-        position: relative;
-        padding-bottom: 2.8rem;
+    &--rooms {
+      width: 42%;
+    }
+  }
+
+  &__content-part {
+    padding-bottom: 1.3rem;
+
+    &--padding-btm {
+      padding-bottom: 3.5rem;
+    }
+  }
+
+  &__btn {
+    width: 18.3rem;
+    height: 5.5rem;
+  }
+
+  &__image-container {
+    display: inline-block;
+
+    &--about {
+      width: 37%;
+      position: relative;
+
+      @media #{$max575} {
+        display: none;
+      }
+    }
+
+    &--rooms {
+      width: 58%;
+    }
+  }
+
+  &__image {
+      &--rooms {
+        height: 100%;
+      }
+  }
+
+  .content-box {
+    padding-left: 6rem;
+    padding-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media #{$max1400} {
+        padding-top: 10px;
     }
     &__title {
-        font-size: 2.7rem;
-        color: #003f8c;
-        text-transform: uppercase;
-        font-weight: normal;
-        width: 150px;
-        line-height: 2.7rem;
-        padding-top: 10px;
-        padding-bottom: 1rem;
+      padding-bottom: 1.5rem;
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: #003f8c;
+
+      &-color {
+        color: #ffb01e;
+        font-weight: 600;
+      }
     }
 
-    &__title-stripe {
-        border-bottom: 2px solid #003f8c;
-        width: 62%;
-        position: absolute;
-        top: 30px;
-        left: 150px;
-        z-index: 2;
-    }
-
-    &__stars-group {
-        width: 100px;
+    &__icons {
+        width: 70%;
+        display: flex;
         justify-content: space-between;
     }
 
-    .star-elem--section {
-        width: 20px;
+    &__icon {
+        color: #003f8c;
+        height: 2.7rem;
     }
 
-    &__container {
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-
-    &__content {
-        width: 63%;
-        text-align: justify;
-        display: inline-block;
-        padding-right: 8.2rem;
-        padding-bottom: 1rem;
-
-        @media #{$max991} {
-            padding-right: 50px;
-        }
-        @media #{$max767} {
-            padding-right: 30px;
-        }
-        @media #{$max575} {
-            width: 100%;
-            padding-right: 0;
-        }
-    }
-
-    &__content-part {
-        padding-bottom: 1.3rem;
-
-        &--padding-btm {
-            padding-bottom: 3.5rem;
-        }
-    }
-
-    &__btn {
-        width: 18.3rem;
-        height: 5.5rem;
-    }
-
-    &__image-container {
-        width: 37%;
-        display: inline-block;
-        position: relative;
-
-        @media #{$max575} {
-            display: none;
-        }
-    }
-
-    &__image {
+    &__price-box {
+        height: 25%;
         width: 100%;
-        position: absolute;
-        bottom: 0;
-        height: 145%;
-        background: url('../../images/photos/hotel_1.png');
-        background-size: cover;
-        // background-position: right center;
-
-        @media #{$max1400} {
-            height: 140%;
-        }
-
-        @media #{$max767} {
-            height: 100%;
-            top: -30px;
-        }
+        display: flex;
+        align-self: flex-end;
+        position: relative;
     }
+
+    &__price {
+        background-color: #003f8c;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: -50%;
+    }
+  }
+
+  &__bcg-image {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 145%;
+
+    &--about {
+      background: url("../../images/photos/hotel_1.png");
+      background-size: cover;
+    }
+
+    @media #{$max1400} {
+      height: 140%;
+    }
+
+    @media #{$max767} {
+      height: 100%;
+      top: -30px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
 }
