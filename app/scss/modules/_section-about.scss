@@ -1,0 +1,60 @@
+.about {
+  &__content {
+    text-align: justify;
+    display: inline-block;
+    width: 63%;
+    padding-right: 8.2rem;
+    padding-bottom: 1rem;
+
+    @media #{$max991} {
+      padding-right: 50px;
+    }
+    @media #{$max767} {
+      padding-right: 30px;
+    }
+    @media #{$max575} {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  &__content-part {
+    padding-bottom: 1.3rem;
+
+    &--padding-btm {
+      padding-bottom: 3.5rem;
+    }
+  }
+
+  &__image-container {
+    display: inline-block;
+    width: 37%;
+    position: relative;
+
+    @media #{$max575} {
+      display: none;
+    }
+  }
+
+  &__bcg-image {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 145%;
+    background: url("../../images/photos/hotel_1.png");
+    background-size: cover;
+
+    @media #{$max1400} {
+      height: 140%;
+    }
+
+    @media #{$max767} {
+      height: 100%;
+      top: -30px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

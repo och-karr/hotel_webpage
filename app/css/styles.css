@@ -9,7 +9,7 @@ Imports all project style components.
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  font-family: 'Open Sans'; }
+  font-family: "Open Sans"; }
 
 html {
   font-size: 15px; }
@@ -29,6 +29,21 @@ html {
   min-width: 280px;
   margin: 0 auto;
   overflow: hidden; }
+
+.section {
+  padding: 5.5rem 13.6rem; }
+  @media all and (max-width: 991px) {
+    .section {
+      padding: 50px 100px; } }
+  @media all and (max-width: 767px) {
+    .section {
+      padding: 30px; } }
+  .section__container {
+    display: flex;
+    flex-wrap: wrap; }
+  .section__btn {
+    width: 18.3rem;
+    height: 5.5rem; }
 
 .basic-text {
   font-size: 1rem; }
@@ -69,8 +84,11 @@ html {
   width: 62%;
   position: absolute;
   top: 30px;
-  left: 150px;
   z-index: 2; }
+  .section__title-stripe--left {
+    left: 150px; }
+  .section__title-stripe--right {
+    right: 150px; }
 
 .section__stars-group {
   width: 100px;
@@ -332,105 +350,145 @@ html {
     display: block;
     margin: 0 auto; }
 
-.section {
-  padding: 5.5rem 13.6rem; }
+.about__content {
+  text-align: justify;
+  display: inline-block;
+  width: 63%;
+  padding-right: 8.2rem;
+  padding-bottom: 1rem; }
   @media all and (max-width: 991px) {
-    .section {
-      padding: 50px 100px; } }
+    .about__content {
+      padding-right: 50px; } }
   @media all and (max-width: 767px) {
-    .section {
-      padding: 30px; } }
-  .section__container {
-    display: flex;
-    flex-wrap: wrap; }
-  .section__content {
-    text-align: justify;
-    display: inline-block; }
-    .section__content--about {
-      width: 63%;
-      padding-right: 8.2rem;
-      padding-bottom: 1rem; }
-      @media all and (max-width: 991px) {
-        .section__content--about {
-          padding-right: 50px; } }
-      @media all and (max-width: 767px) {
-        .section__content--about {
-          padding-right: 30px; } }
-      @media all and (max-width: 575px) {
-        .section__content--about {
-          width: 100%;
-          padding-right: 0; } }
-    .section__content--rooms {
-      width: 42%; }
-  .section__content-part {
-    padding-bottom: 1.3rem; }
-    .section__content-part--padding-btm {
-      padding-bottom: 3.5rem; }
-  .section__btn {
-    width: 18.3rem;
-    height: 5.5rem; }
-  .section__image-container {
-    display: inline-block; }
-    .section__image-container--about {
-      width: 37%;
-      position: relative; }
-      @media all and (max-width: 575px) {
-        .section__image-container--about {
-          display: none; } }
-    .section__image-container--rooms {
-      width: 58%; }
-  .section__image--rooms {
-    height: 100%; }
-  .section .content-box {
-    padding-left: 6rem;
-    padding-top: 2.5rem;
-    display: flex;
-    flex-wrap: wrap; }
-    @media all and (max-width: 1400px) {
-      .section .content-box {
-        padding-top: 10px; } }
-    .section .content-box__title {
-      padding-bottom: 1.5rem;
-      font-size: 2.5rem;
-      font-weight: 300;
-      color: #003f8c; }
-      .section .content-box__title-color {
-        color: #ffb01e;
-        font-weight: 600; }
-    .section .content-box__icons {
-      width: 70%;
-      display: flex;
-      justify-content: space-between; }
-    .section .content-box__icon {
-      color: #003f8c;
-      height: 2.7rem; }
-    .section .content-box__price-box {
-      height: 25%;
+    .about__content {
+      padding-right: 30px; } }
+  @media all and (max-width: 575px) {
+    .about__content {
       width: 100%;
-      display: flex;
-      align-self: flex-end;
-      position: relative; }
-    .section .content-box__price {
-      background-color: #003f8c;
-      color: #fff;
-      width: 100%;
+      padding-right: 0; } }
+
+.about__content-part {
+  padding-bottom: 1.3rem; }
+  .about__content-part--padding-btm {
+    padding-bottom: 3.5rem; }
+
+.about__image-container {
+  display: inline-block;
+  width: 37%;
+  position: relative; }
+  @media all and (max-width: 575px) {
+    .about__image-container {
+      display: none; } }
+
+.about__bcg-image {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 145%;
+  background: url("../../images/photos/hotel_1.png");
+  background-size: cover; }
+  @media all and (max-width: 1400px) {
+    .about__bcg-image {
+      height: 140%; } }
+  @media all and (max-width: 767px) {
+    .about__bcg-image {
       height: 100%;
-      position: absolute;
-      left: -50%; }
-  .section__bcg-image {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 145%; }
-    .section__bcg-image--about {
-      background: url("../../images/photos/hotel_1.png");
-      background-size: cover; }
-    @media all and (max-width: 1400px) {
-      .section__bcg-image {
-        height: 140%; } }
+      top: -30px; } }
+
+.about__image {
+  width: 100%; }
+
+.rooms__content {
+  text-align: justify;
+  display: inline-block;
+  width: 42%; }
+  @media all and (max-width: 767px) {
+    .rooms__content {
+      width: 100%;
+      padding-left: 0; } }
+
+.rooms__content-part {
+  padding-bottom: 1.3rem; }
+
+.rooms__image-container {
+  display: inline-block;
+  width: 58%; }
+  @media all and (max-width: 767px) {
+    .rooms__image-container {
+      width: 50%; } }
+  @media all and (max-width: 575px) {
+    .rooms__image-container {
+      width: 100%; } }
+
+.rooms__image {
+  height: 100%;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto; }
+
+.rooms .content-box {
+  padding-left: 6rem;
+  padding-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap; }
+  @media all and (max-width: 1400px) {
+    .rooms .content-box {
+      padding-top: 10px; } }
+  @media all and (max-width: 991px) {
+    .rooms .content-box {
+      padding-left: 30px;
+      padding-top: 0; } }
+  @media all and (max-width: 767px) {
+    .rooms .content-box {
+      padding-left: 0;
+      width: 50%;
+      padding: 10px; } }
+  @media all and (max-width: 575px) {
+    .rooms .content-box {
+      width: 100%;
+      padding: 0; } }
+  .rooms .content-box__title {
+    padding-bottom: 1.5rem;
+    font-size: 2.45rem;
+    font-weight: 300;
+    color: #003f8c; }
+    @media all and (max-width: 991px) {
+      .rooms .content-box__title {
+        padding-bottom: 5px; } }
+    .rooms .content-box__title-color {
+      color: #ffb01e;
+      font-weight: 600; }
+  .rooms .content-box__icons {
+    width: 70%;
+    max-width: 180px;
+    display: flex;
+    justify-content: space-between; }
     @media all and (max-width: 767px) {
-      .section__bcg-image {
-        height: 100%;
-        top: -30px; } }
-  .section__image {
-    width: 100%; }
+      .rooms .content-box__icons {
+        padding-bottom: 20px; } }
+  .rooms .content-box__icon {
+    color: #003f8c;
+    height: 2.7rem; }
+  .rooms .content-box__price-box {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+    position: relative; }
+    @media all and (max-width: 767px) {
+      .rooms .content-box__price-box {
+        height: 50px; } }
+  .rooms .content-box__price {
+    background-color: #003f8c;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -50%; }
+    @media all and (max-width: 767px) {
+      .rooms .content-box__price {
+        top: 60px; } }
+    @media all and (max-width: 575px) {
+      .rooms .content-box__price {
+        left: 0;
+        top: 0; } }

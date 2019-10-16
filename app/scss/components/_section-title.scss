@@ -27,8 +27,15 @@
     width: 62%;
     position: absolute;
     top: 30px;
-    left: 150px;
     z-index: 2;
+
+    &--left {
+      left: 150px;
+    }
+
+    &--right {
+      right: 150px;
+    }
   }
 
   &__stars-group {

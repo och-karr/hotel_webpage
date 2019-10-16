@@ -1,0 +1,124 @@
+.rooms {
+  &__content {
+    text-align: justify;
+    display: inline-block;
+    width: 42%;
+
+    @media #{$max767} {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+
+  &__content-part {
+    padding-bottom: 1.3rem;
+  }
+
+  &__image-container {
+    display: inline-block;
+    width: 58%;
+
+    @media #{$max767} {
+      width: 50%;
+    }
+
+    @media #{$max575} {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    height: 100%;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .content-box {
+    padding-left: 6rem;
+    padding-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media #{$max1400} {
+      padding-top: 10px;
+    }
+
+    @media #{$max991} {
+      padding-left: 30px;
+      padding-top: 0;
+    }
+
+    @media #{$max767} {
+      padding-left: 0;
+      width: 50%;
+      padding: 10px;
+    }
+
+    @media #{$max575} {
+      width: 100%;
+      padding: 0;
+    }
+
+    &__title {
+      padding-bottom: 1.5rem;
+      font-size: 2.45rem;
+      font-weight: 300;
+      color: #003f8c;
+
+      @media #{$max991} {
+        padding-bottom: 5px;
+      }
+
+      &-color {
+        color: #ffb01e;
+        font-weight: 600;
+      }
+    }
+
+    &__icons {
+      width: 70%;
+      max-width: 180px;
+      display: flex;
+      justify-content: space-between;
+      @media #{$max767} {
+        padding-bottom: 20px;
+      }
+    }
+
+    &__icon {
+      color: #003f8c;
+      height: 2.7rem;
+    }
+
+    &__price-box {
+      height: 25%;
+      width: 100%;
+      display: flex;
+      align-self: flex-end;
+      position: relative;
+
+      @media #{$max767} {
+        height: 50px;
+      }
+    }
+
+    &__price {
+      background-color: #003f8c;
+      color: #fff;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -50%;
+
+      @media #{$max767} {
+        top: 60px;
+      }
+
+      @media #{$max575} {
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
