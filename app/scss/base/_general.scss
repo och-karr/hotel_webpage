@@ -44,6 +44,11 @@ html {
   &__container {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 5px;
+
+    &--rev {
+      flex-direction: row-reverse;
+    }
   }
 
   &__btn {

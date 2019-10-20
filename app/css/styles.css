@@ -40,13 +40,19 @@ html {
       padding: 30px; } }
   .section__container {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-bottom: 5px; }
+    .section__container--rev {
+      flex-direction: row-reverse; }
   .section__btn {
     width: 18.3rem;
     height: 5.5rem; }
 
 .basic-text {
   font-size: 1rem; }
+
+.bold-text {
+  font-weight: 600; }
 
 .btn {
   background-color: #ffb01e;
@@ -421,26 +427,40 @@ html {
       width: 100%; } }
 
 .rooms__image {
-  height: 100%;
-  max-width: 500px;
   width: 100%;
+  object-fit: cover;
   margin: 0 auto; }
 
 .rooms .content-box {
-  padding-left: 6rem;
   padding-top: 2.5rem;
   display: flex;
   flex-wrap: wrap; }
+  .rooms .content-box--padding-left {
+    padding-left: 6rem; }
+    @media all and (max-width: 991px) {
+      .rooms .content-box--padding-left {
+        padding-left: 30px; } }
+    @media all and (max-width: 767px) {
+      .rooms .content-box--padding-left {
+        padding-left: 0; } }
+  .rooms .content-box--padding-right {
+    padding-right: 6rem;
+    display: flex;
+    justify-content: flex-end; }
+    @media all and (max-width: 991px) {
+      .rooms .content-box--padding-right {
+        padding-right: 30px; } }
+    @media all and (max-width: 767px) {
+      .rooms .content-box--padding-right {
+        padding-right: 0; } }
   @media all and (max-width: 1400px) {
     .rooms .content-box {
       padding-top: 10px; } }
   @media all and (max-width: 991px) {
     .rooms .content-box {
-      padding-left: 30px;
       padding-top: 0; } }
   @media all and (max-width: 767px) {
     .rooms .content-box {
-      padding-left: 0;
       width: 50%;
       padding: 10px; } }
   @media all and (max-width: 575px) {
@@ -481,13 +501,18 @@ html {
   .rooms .content-box__price {
     background-color: #003f8c;
     color: #fff;
-    width: 100%;
+    width: 320px;
     height: 100%;
     position: absolute;
-    left: -50%; }
+    left: -68%;
+    bottom: 4px;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     @media all and (max-width: 767px) {
       .rooms .content-box__price {
-        top: 60px; } }
+        top: 70px; } }
     @media all and (max-width: 575px) {
       .rooms .content-box__price {
         left: 0;
