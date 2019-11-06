@@ -2,12 +2,9 @@
   &__content {
     text-align: justify;
     display: inline-block;
-    width: 42%;
-
-    @media #{$max767} {
-      width: 100%;
-      padding-left: 0;
-    }
+    width: 35%;
+    box-sizing: content-box;
+    position: relative;
   }
 
   &__content-part {
@@ -16,11 +13,7 @@
 
   &__image-container {
     display: inline-block;
-    width: 58%;
-
-    @media #{$max767} {
-      width: 50%;
-    }
+    width: 55%;
 
     @media #{$max575} {
       width: 100%;
@@ -29,14 +22,40 @@
 
   &__image {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     margin: 0 auto;
   }
 
   .content-box {
     padding-top: 2.5rem;
+    padding-bottom: 160px;
     display: flex;
     flex-wrap: wrap;
+
+    @media #{$max1400} {
+      padding-bottom: 80px;
+    }
+
+    @media #{$max1199} {
+      font-size: 11px;
+    }
+
+    @media #{$max991} {
+      padding-top: 0;
+    }
+
+    @media #{$max767} {
+      width: 40%;
+      padding: 10px;
+      padding-bottom: 50px;
+    }
+
+    @media #{$max575} {
+      width: 100%;
+      padding: 0;
+      padding-top: 10px;
+    }
 
     &--padding-left {
       padding-left: 6rem;
@@ -62,24 +81,6 @@
       @media #{$max767} {
         padding-right: 0;
       }
-    }
-
-    @media #{$max1400} {
-      padding-top: 10px;
-    }
-
-    @media #{$max991} {
-      padding-top: 0;
-    }
-
-    @media #{$max767} {
-      width: 50%;
-      padding: 10px;
-    }
-
-    @media #{$max575} {
-      width: 100%;
-      padding: 0;
     }
 
     &__title {
@@ -113,36 +114,36 @@
       height: 2.7rem;
     }
 
-    &__price-box {
-      height: 25%;
-      width: 100%;
-      display: flex;
-      align-self: flex-end;
-      position: relative;
-
-      @media #{$max767} {
-        height: 50px;
-      }
-    }
-
     &__price {
       background-color: #003f8c;
       color: #fff;
-      width: 320px;
-      height: 100%;
+      width: 100%;
+      height: 6rem;
       position: absolute;
-      left: -68%;
-      bottom: 4px;
+      bottom: 0;
       font-size: 1.4rem;
       display: flex;
       justify-content: center;
       align-items: center;
 
-      @media #{$max767} {
-        top: 70px;
+      &--left {
+        left: -23.5%;
+
+        @media #{$max991} {
+          left: -25.5%;
+        }
+      }
+
+      &--right {
+        right: -23.5%;
+
+        @media #{$max991} {
+          right: -25.5%;
+        }
       }
 
       @media #{$max575} {
+        position: static;
         left: 0;
         top: 0;
       }

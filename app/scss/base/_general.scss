@@ -46,6 +46,10 @@ html {
     flex-wrap: wrap;
     margin-bottom: 5px;
 
+    @media #{$max767} {
+      justify-content: center;
+    }
+
     &--rev {
       flex-direction: row-reverse;
     }
