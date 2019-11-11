@@ -45,9 +45,14 @@ html {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5px;
+    position: relative;
 
     @media #{$max767} {
       justify-content: center;
+    }
+
+    @media #{$max575} {
+      margin-bottom: 30px;;
     }
 
     &--rev {

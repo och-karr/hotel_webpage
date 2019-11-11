@@ -4,7 +4,7 @@
     display: inline-block;
     width: 35%;
     box-sizing: content-box;
-    position: relative;
+    // position: relative;
   }
 
   &__content-part {
@@ -13,7 +13,7 @@
 
   &__image-container {
     display: inline-block;
-    width: 55%;
+    width: 54%;
 
     @media #{$max575} {
       width: 100%;
@@ -65,7 +65,7 @@
       }
   
       @media #{$max767} {
-        padding-left: 0;
+        padding-left: 10px;
       }
     }
 
@@ -79,7 +79,7 @@
       }
   
       @media #{$max767} {
-        padding-right: 0;
+        padding-right: 10px;
       }
     }
 
@@ -117,7 +117,7 @@
     &__price {
       background-color: #003f8c;
       color: #fff;
-      width: 100%;
+      width: 40%;
       height: 6rem;
       position: absolute;
       bottom: 0;
@@ -127,23 +127,24 @@
       align-items: center;
 
       &--left {
-        left: -23.5%;
+        right: 14%;
 
-        @media #{$max991} {
-          left: -25.5%;
+        @media #{$max767} {
+          right: 15.5%;
         }
       }
 
       &--right {
-        right: -23.5%;
+        left: 14%;
 
-        @media #{$max991} {
-          right: -25.5%;
+        @media #{$max767} {
+          left: 15.5%;
         }
       }
 
       @media #{$max575} {
         position: static;
+        width: 100%;
         left: 0;
         top: 0;
       }

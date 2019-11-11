@@ -41,10 +41,14 @@ html {
   .section__container {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    position: relative; }
     @media all and (max-width: 767px) {
       .section__container {
         justify-content: center; } }
+    @media all and (max-width: 575px) {
+      .section__container {
+        margin-bottom: 30px; } }
     .section__container--rev {
       flex-direction: row-reverse; }
   .section__btn {
@@ -107,6 +111,28 @@ html {
 
 .section .star-elem--section {
   width: 20px; }
+
+.section__desc {
+  color: #fff;
+  background-color: #003f8c;
+  font-size: 1.33rem;
+  padding: 2rem 3rem 2rem 13.6rem;
+  width: 163%;
+  width: calc(63% + 13.6rem);
+  position: absolute;
+  top: 30px;
+  z-index: 2;
+  left: -13.6rem;
+  text-align: justify;
+  font-weight: 300;
+  top: -30px; }
+  @media all and (max-width: 575px) {
+    .section__desc {
+      position: relative;
+      width: calc(100% + 60px);
+      left: -30px;
+      padding: 2rem 3rem 2rem 3rem;
+      margin-top: 50px; } }
 
 .nav {
   width: 100%;
@@ -411,15 +437,14 @@ html {
   text-align: justify;
   display: inline-block;
   width: 35%;
-  box-sizing: content-box;
-  position: relative; }
+  box-sizing: content-box; }
 
 .rooms__content-part {
   padding-bottom: 1.3rem; }
 
 .rooms__image-container {
   display: inline-block;
-  width: 55%; }
+  width: 54%; }
   @media all and (max-width: 575px) {
     .rooms__image-container {
       width: 100%; } }
@@ -461,7 +486,7 @@ html {
         padding-left: 30px; } }
     @media all and (max-width: 767px) {
       .rooms .content-box--padding-left {
-        padding-left: 0; } }
+        padding-left: 10px; } }
   .rooms .content-box--padding-right {
     padding-right: 6rem;
     display: flex;
@@ -471,7 +496,7 @@ html {
         padding-right: 30px; } }
     @media all and (max-width: 767px) {
       .rooms .content-box--padding-right {
-        padding-right: 0; } }
+        padding-right: 10px; } }
   .rooms .content-box__title {
     padding-bottom: 1.5rem;
     font-size: 2.45rem;
@@ -497,7 +522,7 @@ html {
   .rooms .content-box__price {
     background-color: #003f8c;
     color: #fff;
-    width: 100%;
+    width: 40%;
     height: 6rem;
     position: absolute;
     bottom: 0;
@@ -506,17 +531,18 @@ html {
     justify-content: center;
     align-items: center; }
     .rooms .content-box__price--left {
-      left: -23.5%; }
-      @media all and (max-width: 991px) {
+      right: 14%; }
+      @media all and (max-width: 767px) {
         .rooms .content-box__price--left {
-          left: -25.5%; } }
+          right: 15.5%; } }
     .rooms .content-box__price--right {
-      right: -23.5%; }
-      @media all and (max-width: 991px) {
+      left: 14%; }
+      @media all and (max-width: 767px) {
         .rooms .content-box__price--right {
-          right: -25.5%; } }
+          left: 15.5%; } }
     @media all and (max-width: 575px) {
       .rooms .content-box__price {
         position: static;
+        width: 100%;
         left: 0;
         top: 0; } }
