@@ -46,14 +46,31 @@ html {
     @media all and (max-width: 767px) {
       .section__container {
         justify-content: center; } }
-    @media all and (max-width: 575px) {
-      .section__container {
-        margin-bottom: 30px; } }
     .section__container--rev {
       flex-direction: row-reverse; }
+    .section__container--restaurants {
+      padding-top: 10px; }
+      @media all and (max-width: 575px) {
+        .section__container--restaurants {
+          padding-top: 0; } }
   .section__btn {
     width: 18.3rem;
     height: 5.5rem; }
+    .section__btn--center {
+      display: block;
+      margin: 30px auto 0 auto; }
+
+.content-box__title {
+  padding-bottom: 1.5rem;
+  font-size: 2.45rem;
+  font-weight: 300;
+  color: #003f8c; }
+  @media all and (max-width: 991px) {
+    .content-box__title {
+      padding-bottom: 5px; } }
+  .content-box__title-color {
+    color: #ffb01e;
+    font-weight: 600; }
 
 .basic-text {
   font-size: 1rem; }
@@ -79,6 +96,9 @@ html {
   padding-bottom: 2.8rem; }
   .section__title-container--right {
     text-align: right; }
+  @media all and (max-width: 575px) {
+    .section__title-container--restaurants {
+      padding-bottom: 0; } }
 
 .section__title {
   font-size: 2.7rem;
@@ -91,6 +111,11 @@ html {
   padding-bottom: 1rem; }
   .section__title--right {
     margin: 0 0 0 auto; }
+  .section__title--wide {
+    width: 300px; }
+    @media all and (max-width: 1199px) {
+      .section__title--wide {
+        width: 220px; } }
 
 .section__title-stripe {
   border-bottom: 2px solid #003f8c;
@@ -102,6 +127,11 @@ html {
     left: 150px; }
   .section__title-stripe--right {
     right: 150px; }
+  .section__title-stripe--wide-title {
+    left: 300px; }
+    @media all and (max-width: 1199px) {
+      .section__title-stripe--wide-title {
+        left: 220px; } }
 
 .section__stars-group {
   width: 100px;
@@ -116,16 +146,20 @@ html {
   color: #fff;
   background-color: #003f8c;
   font-size: 1.33rem;
-  padding: 2rem 3rem 2rem 13.6rem;
   width: 163%;
   width: calc(63% + 13.6rem);
   position: absolute;
   top: 30px;
   z-index: 2;
-  left: -13.6rem;
   text-align: justify;
   font-weight: 300;
   top: -30px; }
+  .section__desc--left {
+    left: -13.6rem;
+    padding: 2rem 3rem 2rem 13.6rem; }
+  .section__desc--right {
+    right: -13.6rem;
+    padding: 2rem 13.6rem 2rem 3rem; }
   @media all and (max-width: 575px) {
     .section__desc {
       position: relative;
@@ -486,7 +520,7 @@ html {
         padding-left: 30px; } }
     @media all and (max-width: 767px) {
       .rooms .content-box--padding-left {
-        padding-left: 10px; } }
+        padding-left: 0; } }
   .rooms .content-box--padding-right {
     padding-right: 6rem;
     display: flex;
@@ -496,18 +530,7 @@ html {
         padding-right: 30px; } }
     @media all and (max-width: 767px) {
       .rooms .content-box--padding-right {
-        padding-right: 10px; } }
-  .rooms .content-box__title {
-    padding-bottom: 1.5rem;
-    font-size: 2.45rem;
-    font-weight: 300;
-    color: #003f8c; }
-    @media all and (max-width: 991px) {
-      .rooms .content-box__title {
-        padding-bottom: 5px; } }
-    .rooms .content-box__title-color {
-      color: #ffb01e;
-      font-weight: 600; }
+        padding-right: 0; } }
   .rooms .content-box__icons {
     width: 70%;
     max-width: 180px;
@@ -546,3 +569,46 @@ html {
         width: 100%;
         left: 0;
         top: 0; } }
+
+.restaurants__content {
+  text-align: justify;
+  display: inline-block;
+  width: 63%;
+  padding-left: 8.2rem;
+  padding-bottom: 1rem;
+  padding-top: 2.5rem; }
+  @media all and (max-width: 991px) {
+    .restaurants__content {
+      padding-left: 50px; } }
+  @media all and (max-width: 767px) {
+    .restaurants__content {
+      padding-left: 30px; } }
+  @media all and (max-width: 575px) {
+    .restaurants__content {
+      width: 100%;
+      padding-left: 0;
+      padding-top: 0; } }
+
+.restaurants__content-part {
+  padding-bottom: 1.3rem; }
+  .restaurants__content-part--padding-btm {
+    padding-bottom: 3.5rem; }
+
+.restaurants__image-container {
+  display: inline-block;
+  width: 37%;
+  position: relative; }
+  @media all and (max-width: 575px) {
+    .restaurants__image-container {
+      display: none; } }
+
+.restaurants__bcg-image {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  background: url("../../images/photos/restaurant.png");
+  background-size: cover; }
+
+.restaurants__image {
+  width: 100%; }

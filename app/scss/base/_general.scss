@@ -52,16 +52,47 @@ html {
     }
 
     @media #{$max575} {
-      margin-bottom: 30px;;
+      // margin-bottom: 30px;
     }
 
     &--rev {
       flex-direction: row-reverse;
+    }
+
+    &--restaurants {
+      padding-top: 10px;
+
+      @media #{$max575} {
+        padding-top: 0;
+      }
     }
   }
 
   &__btn {
     width: 18.3rem;
     height: 5.5rem;
+
+    &--center {
+      display: block;
+      margin: 30px auto 0 auto;
+    }
+  }
+}
+
+.content-box {
+  &__title {
+    padding-bottom: 1.5rem;
+    font-size: 2.45rem;
+    font-weight: 300;
+    color: #003f8c;
+
+    @media #{$max991} {
+      padding-bottom: 5px;
+    }
+
+    &-color {
+      color: #ffb01e;
+      font-weight: 600;
+    }
   }
 }
