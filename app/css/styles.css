@@ -589,6 +589,37 @@ html {
       padding-left: 0;
       padding-top: 0; } }
 
+.restaurants .content-box__icons {
+  display: flex;
+  height: 80px;
+  align-items: center; }
+
+.restaurants .content-box__icons-container {
+  width: 50%; }
+
+.restaurants .content-box__icon {
+  display: inline-block;
+  height: 35px;
+  width: 50px;
+  vertical-align: middle; }
+  @media all and (max-width: 575px) {
+    .restaurants .content-box__icon {
+      width: 30px; } }
+
+.restaurants .content-box__desc {
+  display: inline-block;
+  padding-left: 1rem;
+  width: calc(100% - 60px);
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: #003f8c;
+  vertical-align: middle;
+  line-height: 19px; }
+  @media all and (max-width: 575px) {
+    .restaurants .content-box__desc {
+      padding-left: 5px; } }
+
 .restaurants__content-part {
   padding-bottom: 1.3rem; }
   .restaurants__content-part--padding-btm {
