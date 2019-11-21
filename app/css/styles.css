@@ -53,6 +53,9 @@ html {
       @media all and (max-width: 575px) {
         .section__container--restaurants {
           padding-top: 0; } }
+    .section__container--contact {
+      display: flex;
+      justify-content: flex-end; }
   .section__btn {
     width: 18.3rem;
     height: 5.5rem; }
@@ -642,4 +645,37 @@ html {
   background-size: cover; }
 
 .restaurants__image {
+  width: 100%; }
+
+.contact__content {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px; }
+
+.contact .content-box__icons {
+  display: flex;
+  width: 100%;
+  align-items: center; }
+
+.contact .content-box__icons-container {
+  width: 33%; }
+
+.contact .content-box__icon {
+  height: 30px;
+  max-width: 30px; }
+
+.contact .content-box__desc {
+  width: 100%; }
+
+.contact .content-box__form {
+  width: 100%; }
+
+.contact .content-box__label {
+  width: 100%;
+  display: inline-block; }
+
+.contact .content-box__input {
+  width: 100%; }
+
+.contact .content-box__textarea {
   width: 100%; }

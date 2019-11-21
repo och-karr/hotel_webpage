@@ -1,0 +1,52 @@
+.contact {
+  &__content {
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+
+    @media #{$max991} {
+    }
+    @media #{$max767} {
+    }
+    @media #{$max575} {
+    }
+  }
+
+  .content-box {
+    &__icons {
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+
+    &__icons-container {
+      width: 33%;
+    }
+
+    &__icon {
+      height: 30px;
+      max-width: 30px;
+    }
+
+    &__desc {
+      width: 100%;
+    }
+
+    &__form {
+        width: 100%;
+      }
+    
+      &__label {
+        width: 100%;
+        display: inline-block;
+      }
+
+      &__input {
+          width: 100%;
+      }
+    
+      &__textarea {
+        width: 100%;
+      }
+  }
+}
