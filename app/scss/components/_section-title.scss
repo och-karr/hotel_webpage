@@ -38,7 +38,7 @@
 
   &__title-stripe {
     border-bottom: 2px solid #003f8c;
-    width: 62%;
+    width: 80%;
     position: absolute;
     top: 30px;
     z-index: 2;
@@ -99,6 +99,18 @@
     &--right {
       right: -13.6rem;
       padding: 2rem 13.6rem 2rem 3rem;
+    }
+
+    &--contact {
+      padding: 2rem 3rem 2rem 26.6rem;
+
+      @media #{$max991} {
+        padding: 2rem 3rem 2rem 22.6rem;
+      }
+
+      @media #{$max767} {
+        padding: 2rem 3rem 2rem 16.6rem;
+      }
     }
 
     @media #{$max575} {

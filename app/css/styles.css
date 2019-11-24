@@ -122,7 +122,7 @@ html {
 
 .section__title-stripe {
   border-bottom: 2px solid #003f8c;
-  width: 62%;
+  width: 80%;
   position: absolute;
   top: 30px;
   z-index: 2; }
@@ -163,6 +163,14 @@ html {
   .section__desc--right {
     right: -13.6rem;
     padding: 2rem 13.6rem 2rem 3rem; }
+  .section__desc--contact {
+    padding: 2rem 3rem 2rem 26.6rem; }
+    @media all and (max-width: 991px) {
+      .section__desc--contact {
+        padding: 2rem 3rem 2rem 22.6rem; } }
+    @media all and (max-width: 767px) {
+      .section__desc--contact {
+        padding: 2rem 3rem 2rem 16.6rem; } }
   @media all and (max-width: 575px) {
     .section__desc {
       position: relative;
@@ -647,35 +655,92 @@ html {
 .restaurants__image {
   width: 100%; }
 
-.contact__content {
-  display: inline-block;
-  width: 100%;
-  max-width: 500px; }
-
-.contact .content-box__icons {
-  display: flex;
-  width: 100%;
-  align-items: center; }
-
-.contact .content-box__icons-container {
-  width: 33%; }
-
-.contact .content-box__icon {
-  height: 30px;
-  max-width: 30px; }
-
-.contact .content-box__desc {
-  width: 100%; }
-
-.contact .content-box__form {
-  width: 100%; }
-
-.contact .content-box__label {
-  width: 100%;
-  display: inline-block; }
-
-.contact .content-box__input {
-  width: 100%; }
-
-.contact .content-box__textarea {
-  width: 100%; }
+.contact {
+  padding-left: 0;
+  padding-bottom: 0; }
+  @media all and (max-width: 575px) {
+    .contact {
+      padding: 30px; } }
+  .contact .section__container {
+    display: flex; }
+    @media all and (max-width: 575px) {
+      .contact .section__container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse; } }
+  .contact__map {
+    width: 60%;
+    background: url(../images/photos/map.png);
+    background-repeat: no-repeat;
+    background-size: 1450px;
+    background-position-x: 80%;
+    margin-top: -30px;
+    padding-bottom: 5.5rem; }
+    @media all and (max-width: 991px) {
+      .contact__map {
+        background: url(../images/photos/map.png);
+        background-size: 1170px;
+        background-position-x: 80%;
+        background-repeat: no-repeat; } }
+    @media all and (max-width: 767px) {
+      .contact__map {
+        width: calc(100% - 290px);
+        background: url(../images/photos/map.png);
+        background-size: 1170px;
+        background-position-x: -625px;
+        background-repeat: no-repeat; } }
+    @media all and (max-width: 575px) {
+      .contact__map {
+        width: 100%;
+        height: 200px;
+        background: url(../images/photos/map.png);
+        background-size: 1000px;
+        background-position-x: 64%;
+        background-position-y: -104px;
+        background-repeat: no-repeat; } }
+  .contact__content {
+    display: inline-block;
+    width: 40%;
+    min-width: 260px;
+    padding-bottom: 5.5rem;
+    padding-top: 70px; }
+    @media all and (max-width: 575px) {
+      .contact__content {
+        width: 100%;
+        padding-top: 0px; } }
+  .contact .content-box__icons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 3rem; }
+  .contact .content-box__icon-container {
+    width: 33%; }
+  .contact .content-box__icon {
+    height: 30px;
+    max-width: 30px;
+    margin: 0 auto;
+    display: block; }
+  .contact .content-box__desc {
+    width: 100%;
+    height: 40px;
+    text-align: center; }
+  .contact .content-box__form {
+    width: 100%; }
+  .contact .content-box__label {
+    width: 100%;
+    display: inline-block;
+    text-align: justify; }
+  .contact .content-box__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 10px; }
+    .contact .content-box__input::placeholder {
+      color: #000; }
+  .contact .content-box__textarea {
+    width: 100%;
+    height: 6rem;
+    padding: 10px;
+    border: 1px solid #c8c8c8;
+    margin-bottom: 10px; }
+    .contact .content-box__textarea::placeholder {
+      color: #000; }
