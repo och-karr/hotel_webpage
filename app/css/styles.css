@@ -26,7 +26,7 @@ html {
 .wrapper {
   width: 100%;
   max-width: 1600px;
-  min-width: 280px;
+  min-width: 320px;
   margin: 0 auto;
   overflow: hidden; }
 
@@ -744,3 +744,37 @@ html {
     margin-bottom: 10px; }
     .contact .content-box__textarea::placeholder {
       color: #000; }
+
+.footer {
+  width: 100%;
+  height: 70px;
+  background-color: #003F8C;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  @media all and (max-width: 575px) {
+    .footer {
+      flex-direction: column-reverse; } }
+  .footer__text {
+    font-size: 1.2rem;
+    font-weight: 300; }
+    @media all and (max-width: 575px) {
+      .footer__text {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem; } }
+  .footer__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; }
+  .footer__list-item {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 300; }
+    @media all and (max-width: 575px) {
+      .footer__list-item {
+        padding: 5px;
+        font-size: 1rem; } }
