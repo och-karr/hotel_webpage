@@ -1,11 +1,11 @@
 .nav {
   width: 100%;
-  background-color: #fff;
+  background-color: $white;
   height: 125px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  border-top: 8px solid #d5d5d5;
+  border-top: 8px solid $border-color;
 
   @media #{$max991} {
     padding: 0 15px;
@@ -21,12 +21,35 @@
 
   @media #{$max575} {
     height: auto;
+    position: relative;
+  }
+
+  &__toggle-container {
+    display: none;
+
+    @media #{$max575} {
+      display: block;
+      order: 2;
+      padding: 10px;
+      width: 100%;
+    }
+  }
+
+  &__toggle-icon {
+    width: 30px;
+    cursor: pointer;
+  }
+
+  &__media-icons {
+    display: inline-block;
+    float: right;
   }
 
   &__list {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    transition: transform .3s;
 
     @media #{$max767} {
       justify-content: space-around;
@@ -38,6 +61,8 @@
       padding: 0;
       flex-wrap: wrap;
       justify-content: flex-start;
+      position: absolute;
+      background-color: $white;
     }
   }
 
@@ -51,6 +76,7 @@
 
     @media #{$max575} {
       padding-left: 0;
+      top: 182px;
     }
   }
 
@@ -59,6 +85,17 @@
     @media #{$max767} {
       order: 3;
       padding-left: 0;
+    }
+
+    @media #{$max575} {
+      top: 286px;
+    }
+  }
+
+  &__list--moved {
+    @media #{$max575} {
+      transform: translateX(-100%);
+      transition: all .3s;
     }
   }
 
@@ -76,10 +113,16 @@
 
   &__link {
     cursor: pointer;
+
+    @media #{$max575} {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__text {
-    color: #003f8c;
+    color: $main-color;
     font-size: 1.3rem;
     font-weight: 400;
   }
@@ -91,8 +134,7 @@
 
   &__list-item--narrower {
     @media #{$max575} {
-      width: 50px;
-      height: 45px;
+      display: none;
     }
   }
 
@@ -104,7 +146,7 @@
       order: 1;
       width: 100%;
       height: 125px;
-      background-color: #003f8c;
+      background-color: $main-color;
     }
   }
 }
@@ -114,8 +156,8 @@
   top: -8px;
   width: 100%;
   padding: 25px 0;
-  background-color: #003f8c;
-  border: 8px solid #fff;
+  background-color: $main-color;
+  border: 8px solid $white;
   border-top: none;
 
   @media #{$max991} {

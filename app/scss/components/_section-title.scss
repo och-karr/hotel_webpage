@@ -15,7 +15,7 @@
   }
   &__title {
     font-size: 2.7rem;
-    color: #003f8c;
+    color: $main-color;
     text-transform: uppercase;
     font-weight: normal;
     width: 150px;
@@ -74,14 +74,10 @@
   }
 
   &__desc {
-    color: #fff;
-    background-color: #003f8c;
+    color: $white;
+    background-color: $main-color;
     font-size: 1.33rem;
     width: 163%;
-    // position: absolute;
-    // top: 0;
-    // left: -50%;
-    // z-index: 5;
 
     width: calc(63% + 13.6rem);
     position: absolute;

@@ -17,12 +17,19 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <nav class="nav">
-                <ul class="nav__list nav__list--left">
-                    <li class="nav__list-item nav__list-item--location"><a class="nav__text nav__link">Hotel</a></li>
-                    <li class="nav__list-item nav__list-item--location"><a class="nav__text nav__link">Pokoje</a></li>
-                    <li class="nav__list-item nav__list-item--location"><a class="nav__text nav__link">Restauracje</a>
+                <div class="nav__toggle-container">
+                    <img src="./images/icons/toggle.png" alt="" class="nav__toggle-icon">
+                    <div class="nav__media-icons">
+                        <img src="./images/icons/fb.svg" alt="facebook icon" class="nav__icon">
+                        <img src="./images/icons/insta.svg" alt="instagram icon" class="nav__icon">
+                    </div>
+                </div>
+                <ul class="nav__list nav__list--left nav__list--moved">
+                    <li class="nav__list-item nav__list-item--location"><a href="#about" class="nav__text nav__link">Hotel</a></li>
+                    <li class="nav__list-item nav__list-item--location"><a href="#rooms" class="nav__text nav__link">Pokoje</a></li>
+                    <li class="nav__list-item nav__list-item--location"><a href="#restaurants" class="nav__text nav__link">Restauracje</a>
                     </li>
                 </ul>
                 <div class="nav__logo-container">
@@ -36,10 +43,10 @@
                         <img src="./images/icons/title.png" alt="hotel logo" class="logo__image">
                     </div>
                 </div>
-                <ul class="nav__list nav__list--right">
-                    <li class="nav__list-item nav__list-item--location"><a class="nav__text nav__link">Rezerwacje</a>
+                <ul class="nav__list nav__list--right nav__list--moved">
+                    <li class="nav__list-item nav__list-item--location"><a href="#header" class="nav__text nav__link">Rezerwacje</a>
                     </li>
-                    <li class="nav__list-item nav__list-item--location"><a class="nav__text nav__link">Kontakt</a></li>
+                    <li class="nav__list-item nav__list-item--location"><a href="#contact" class="nav__text nav__link">Kontakt</a></li>
                     <li class="nav__list-item nav__list-item--location nav__list-item--narrower">
                         <img src="./images/icons/fb.svg" alt="facebook icon" class="nav__link">
                     </li>
@@ -79,7 +86,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="section about">
+            <section class="section about" id="about">
                 <div class="section__title-container">
                     <h2 class="section__title section__title--left">NASZ HOTEL</h2>
                     <div class="section__stars-group stars-group">
@@ -120,7 +127,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section rooms">
+            <section class="section rooms" id="rooms">
                 <div class="section__title-container section__title-container--right">
                     <h2 class="section__title section__title--right">NASZE POKOJE</h2>
                     <div class="section__stars-group stars-group section__stars-group--right">
@@ -131,13 +138,11 @@
                     </div>
                     <div class="section__title-stripe section__title-stripe--right"></div>
                     <div class="section__desc section__desc--left">
-                        <!-- <div class="section__desc-box"> -->
                         Sprawdź unikalną ofertę naszych pokoi. Posiadamy 120 pokoi, w tym 30 klasy <span
                             class="bold-text">PREMIUM</span> o najwyższym
                         standardzie, 40 pokoi <span class="bold-text">DELUXE</span> oraz dodatkowo 50 pokoi w klasie
                         <span class="bold-text">STANDARD</span>. Zapraszamy do zapoznania
                         się ze szczegółowym opisem.
-                        <!-- </div> -->
                     </div>
                 </div>
 
@@ -220,7 +225,7 @@
                 </div>
                 <button class="btn section__btn section__btn--center">Zobacz więcej</button>
             </section>
-            <section class="section restaurants">
+            <section class="section restaurants" id="restaurants">
                 <div
                     class="section__title-container section__title-container--left section__title-container--restaurants">
                     <h2 class="section__title section__title--wide section__title--left">RESTAURACJE</h2>
@@ -288,7 +293,7 @@
                 </div>
                 <button class="btn section__btn section__btn--center">Zobacz więcej</button>
             </section>
-            <section class="section contact">
+            <section class="section contact" id="contact">
                 <div class="section__title-container section__title-container--right">
                     <h2 class="section__title section__title--right">KONTAKT</h2>
                     <div class="section__stars-group stars-group section__stars-group--right">
@@ -350,6 +355,16 @@
                 </div>
             </section>
         </main>
+        <footer class="footer">
+            <p class="footer__text">Copyright 2019 <span class="bold-text">hotel-widok-morze</span>.pl</p>
+            <ul class="footer__list">
+                <li class="footer__list-item">Hotel</li>
+                <li class="footer__list-item">Pokoje</li>
+                <li class="footer__list-item">Restauracje</li>
+                <li class="footer__list-item">Rezerwacje</li>
+                <li class="footer__list-item">Kontakt</li>
+            </ul>
+        </footer>
     </div>
     <script src="./js/index.min.js"></script>
 </body>
