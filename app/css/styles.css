@@ -213,7 +213,6 @@ html {
     width: 30px;
     cursor: pointer; }
   .nav__media-icons {
-    display: inline-block;
     float: right; }
   .nav__list {
     display: flex;

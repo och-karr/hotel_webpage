@@ -12,7 +12,7 @@ navToggleIcon.addEventListener('click', function () {
 for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].addEventListener('click', function () {
         for (let i = 0; i < navLists.length; i++) {
-            navLists[i].classList.add('nav__list--moved');s
+            navLists[i].classList.add('nav__list--moved');
         }
     })
 }

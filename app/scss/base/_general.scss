@@ -51,10 +51,6 @@ html {
       justify-content: center;
     }
 
-    @media #{$max575} {
-      // margin-bottom: 30px;
-    }
-
     &--rev {
       flex-direction: row-reverse;
     }
